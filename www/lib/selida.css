@@ -1,0 +1,175 @@
+body {
+/*
+	background-image: url('../ikona/background/crackle.png');
+	background-repeat: repeat;
+*/
+	background-color: #FFFFFF;
+}
+
+textarea {
+	font-size: 90%;
+}
+
+.inputRight {
+	text-align: right;
+}
+
+#ofelimo {
+	position: relative;
+}
+
+/************************************************************************************************************************/
+
+#toolbar {
+	padding: 0 0 4px 0;
+	margin: 0 0 4px 0;
+	border-style: none none solid none;
+	border-width: 1px;
+	border-color: #777;
+	background-color: rgba(234, 236, 182, 0.10);
+}
+
+#toolbarTable {
+	width: 100%;
+	border-spacing: 0;
+}
+
+#toolbarLeft {
+	text-align: left;
+}
+
+#toolbarCenter {
+	font-weight: bold;
+	text-align: center;
+	white-space: nowrap;
+}
+
+#toolbarRight {
+	text-align: right;
+}
+
+/************************************************************************************************************************/
+
+#account {
+	font-weight: bold;
+}
+
+/***************************************************************************************************************************/
+
+.forma {
+	display: inline-block;
+}
+
+.formaSoma {
+	width: 100%;
+	padding: 8px 4px 14px 4px;
+	background-color: #D3D3AD;
+
+	border-style: solid;
+	border-width: 1px;
+	border-color: #888888;
+
+	box-shadow: 2px 2px 8px #B4B4B4;
+}
+
+.formaTitlos {
+	text-align: center;
+	font-weight: bold;
+	margin: 0 0 1ex 0;
+}
+
+.formaPrompt {
+	text-align: right;
+	padding: 0 6px 0 0;
+	font-style: italic;
+}
+
+.formaPedio {
+	text-align: left;
+}
+
+.formaPanel {
+	width: 100%;
+	margin-top: 1.8ex;
+}
+
+.formaButton {
+	margin: 0px 8px;
+	cursor: pointer;
+}
+
+/***************************************************************************************************************/
+
+.protropi {
+	font-style: italic;
+	text-align: right;
+	white-space: nowrap;
+}
+
+/************************************************************************************************************************/
+
+.tab {
+	display: inline;
+	padding: 0 4px;
+	white-space: nowrap;
+}
+
+.tabLeft {
+	padding: 0 8px 0 0;
+}
+
+.tabRight {
+	padding: 0 0 0 8px;
+}
+
+.tab:before {
+	display: inline-block;
+	content: '[';
+	margin-right: 2px;
+}
+
+.tab:after {
+	display: inline-block;
+	content: ']';
+	margin-left: 2px;
+}
+
+/************************************************************************************************************************/
+
+.klisimoIcon {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+	width: 20px;
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+.klisimoIconEmfanes {
+	opacity: 1;
+}
+
+/************************************************************************************************************************/
+
+#error {
+	padding: 10px 0;
+	color: #FF0000;
+}
+
+.error {
+	color: #FF0000;
+}
+
+#copyright {
+	position: absolute;
+	top: 4px;
+	right: 4px;
+
+	font-style: italic;
+	white-space: nowrap;
+	opacity: 0;
+}
+
+#copyright:hover {
+	opacity: 1;
+}

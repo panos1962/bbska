@@ -1,0 +1,9 @@
+*.swp
+*.zip
+*~
+*.gz
+*.min.js
+site/bekadb
+site/nodedb
+site/sport
+site/*

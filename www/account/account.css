@@ -1,0 +1,33 @@
+input[name="login"] {
+	width: 140px;
+}
+
+input[name="onoma"] {
+	width: 300px;
+}
+
+input[name="email"] {
+	width: 300px;
+}
+
+input[name="kodikos1"] {
+	width: 140px;
+}
+
+input[name="kodikos2"] {
+	width: 140px;
+}
+
+input[name="kodikos"] {
+	width: 140px;
+}
+
+#alagi {
+	font-style: italic;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.alagi {
+	display: none;
+}

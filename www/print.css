@@ -1,0 +1,190 @@
+body {
+	font-family: Georgia, serif;
+	font-size: 11pt;
+}
+
+img {
+	display: none;
+}
+
+#toolbar {
+	display: none;
+}
+
+#query {
+	display: none;
+}
+
+#treno {
+	display: none !important;
+}
+
+.sidePanel {
+	display: none !important;
+}
+
+.panel {
+	display: none;
+}
+
+.monada {
+	padding: 0pt 0 0pt 4pt;
+	margin: 0pt 0pt 0pt 18pt;
+	border-style: none;
+}
+
+.monadaSYSTEM {
+	background-color: transparent;
+}
+
+.monadaPRIVATE {
+	background-color: transparent;
+}
+
+.monadaPRIVATE::after,.monadaSYSTEM::after {
+	display: block;
+
+	position: absolute;
+	top: 4pt;
+	right: 4pt;
+
+	width: 18pt;
+	height: 18pt;
+
+	content: '';
+	background-image: url('ikona/misc/lock.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+.monadaTarget {
+	background-color: transparent;
+}
+
+.monadaHandler {
+	display: none;
+}
+
+.monadaData {
+	width: 100%;
+	page-break-inside: avoid;
+	border-style: solid none none solid;
+	border-width: 1px;
+	border-color: rgba(0, 0, 0, 0.20);
+	border-radius: 0;
+}
+
+.monadaDataRoot {
+	border-style: none;
+}
+
+.monadaDataSYSTEM {
+	background-color: transparent;
+}
+
+.monadaDataPRIVATE {
+	background-color: transparent;
+}
+
+.monadaDataTarget {
+	border-style: double none none double;
+	border-width: 3pt;
+	border-color: rgba(0, 0, 0, 0.40);
+	background-color: #000;
+	box-shadow: none;
+}
+
+.monadaHeader {
+	border-style: none;
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.monadaKodikos {
+	display: none;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 90%;
+	color: #3C2A0F;
+	text-shadow: none;
+}
+
+.attrKeyVal {
+	text-shadow: none;
+	box-shadow: none;
+}
+
+.attrYouTube {
+	display: none;
+}
+
+.attr {
+	color: #000;
+	background-color: transparent !important;
+	
+}
+
+/* Κατά την εκτύπωση δεν είναι βολικό να υπάρχουν κεντραρισμένα στοιχεία */
+
+.attrKentro {
+	text-align: left;
+}
+
+.attrTarget {
+	color: #000;
+	border-radius: 0px;
+}
+
+.attrEntono {
+	padding: 0;
+}
+
+.attrEntonoError {
+	color: #CC0000;
+}
+
+.attrEntonoWarning {
+	color: #000099;
+}
+
+.attrEntonoNotice {
+	color: #003300;
+}
+
+.attrEntonoPal {
+	color: #555555;
+}
+
+.attrEntonoEros {
+	color: #BB2429;
+}
+
+.attrEntonoExotic {
+	color: #984D07;
+}
+
+.attrEntonoTrivial {
+	color: #663300;
+}
+
+.attrEntonoMono {
+	padding: 0 2px;
+}
+
+.attrLinkContainer {
+	padding: 0px;
+}
+
+.attrLink {
+	padding: 0px;
+	border-style: none;
+	box-shadow: none;
+	text-decoration: underline;
+}
+
+.attrSort {
+	display: none;
+}
+
+.goPanel {
+	display: none;
+}

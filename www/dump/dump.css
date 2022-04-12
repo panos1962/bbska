@@ -1,0 +1,66 @@
+.patInput {
+	width: 100%;
+}
+
+#plist {
+	width: 99%;
+	padding: 10px 0px;
+}
+
+.pitem {
+	margin: 10px 4px;
+}
+
+.pedio {
+	display: inline-block;
+	width: 30%;
+	vertical-align: middle;
+}
+
+.kritirio {
+	display: inline-block;
+	width: 45%;
+	vertical-align: middle;
+}
+
+.handler {
+	display: inline-block;
+	padding: 0 10px;
+	cursor: move;
+	vertical-align: middle;
+}
+
+.handlerIcon {
+	width: 34px;
+}
+
+.delete {
+	display: inline-block;
+	padding: 0 4px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+.deleteIcon {
+	width: 15px;
+}
+
+#neo {
+	display: inline-block;
+	padding: 0 14px;
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#neoIcon {
+	width: 30px;
+}
+
+#submit {
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+#loading {
+	font-style: italic;
+}

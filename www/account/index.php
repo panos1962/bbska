@@ -1,0 +1,10 @@
+<?php
+require_once("../lib/selida.php");
+Selida::head();
+Selida::stylesheet("account/account");
+Selida::javascript("account/account");
+Selida::body();
+Selida::toolbar();
+Selida::ofelimo();
+Selida::telos();
+?>

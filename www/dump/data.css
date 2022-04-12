@@ -1,0 +1,12 @@
+body {
+	background-image: none;
+	font-family: monospace;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td {
+	padding: 2px;
+}
