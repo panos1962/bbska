@@ -3,7 +3,5 @@
 *~
 *.gz
 *.min.js
-site/bekadb
-site/nodedb
-site/sport
 site/*
+!site/README.txt
