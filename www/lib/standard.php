@@ -171,6 +171,8 @@ class Globals {
 		case "localhost":
 		case "www.opasopa.net":
 		case "opasopa.net":
+		case "www.prefadoros.win":
+		case "prefadoros.win":
 			self::$server = "http://" . $http_host . "/bbska/";
 			break;
 		case "www.bbska.info":
@@ -219,13 +221,11 @@ class Globals {
 		case "http://127.0.0.1/bbska/";
 		case "http://localhost/bbska/";
 		case "http://www.bbska.info/":
-		case "https://www.bbska.info/":
 		case "http://bbska.info/":
-		case "https://bbska.info/":
 		case "http://www.opasopa.net/bbska/":
-		case "https://www.opasopa.net/bbska/":
 		case "http://opasopa.net/bbska/":
-		case "https://opasopa.net/bbska/":
+		case "http://www.prefadoros.win/bbska/":
+		case "http://prefadoros.win/bbska/":
 			break;
 		default:
 			if (self::$server)
