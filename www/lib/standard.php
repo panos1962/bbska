@@ -613,15 +613,7 @@ class Monada {
 		if ($opts === NULL)
 		$opts = array();
 
-		if (!array_key_exists("cache", $opts))
-		$opts["cache"] = TRUE;
-
-		$query = "SELECT";
-
-		if ($opts["cache"])
-		$query .= " SQL_CACHE";
-
-		$query .= " `kodikos`, `xristis`, `idiotikotita` " .
+		$query = "SELECT `kodikos`, `xristis`, `idiotikotita` " .
 			"FROM `monada` WHERE `kodikos` = " . $kodikos;
 		$row = Globals::first_row($query, MYSQLI_ASSOC);
 
@@ -636,26 +628,21 @@ class Monada {
 		$opts["alist"] = TRUE;
 
 		if ($opts["alist"])
-		$this->get_monada_alist($opts["cache"]);
+		$this->get_monada_alist();
 
 		if (!array_key_exists("tekno", $opts))
 		$opts["tekno"] = TRUE;
 
 		if ($opts["tekno"])
-		$this->get_monada_tekno($opts["cache"]);
+		$this->get_monada_tekno();
 
 		return $this;
 	}
 
-	public function get_monada_alist($cache = FALSE) {
+	public function get_monada_alist() {
 		$this->alist = array();
 
-		$query = "SELECT";
-
-		if ($cache)
-		$query .= " SQL_CACHE";
-
-		$query .= "`key`, `val` FROM `attr` WHERE `monada` = " .
+		$query = "SELECT `key`, `val` FROM `attr` WHERE `monada` = " .
 			$this->kodikos . " ORDER BY `aa`";
 		$res = Globals::query($query);
 		if (!$res)
@@ -669,15 +656,10 @@ class Monada {
 		return $this;
 	}
 
-	public function get_monada_tekno($cache = FALSE) {
+	public function get_monada_tekno() {
 		$this->tekno = array();
 
-		$query = "SELECT";
-
-		if ($cache)
-		$query .= " SQL_CACHE";
-
-		$query .= " `tekno` FROM `organosi` WHERE `goneas` = " .
+		$query = "SELECT `tekno` FROM `organosi` WHERE `goneas` = " .
 			$this->kodikos . " ORDER BY `aa`";
 		$res = Globals::query($query);
 		if (!$res)
@@ -686,7 +668,6 @@ class Monada {
 		while ($row = $res->fetch_array(MYSQLI_NUM)) {
 			$tekno = new Monada();
 			$tekno->get_monada($row[0], array(
-				"cache" => $cache,
 				"alist" => FALSE,
 				"tekno"	=> FALSE,
 			));

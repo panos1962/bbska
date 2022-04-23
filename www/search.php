@@ -45,7 +45,7 @@ function search_pattern($root, $pattern, $level) {
 
 	$qcount++;
 
-	$query = "SELECT SQL_CACHE `key`, `val` FROM `attr` WHERE `monada` = " . $root->kodikos;
+	$query = "SELECT `key`, `val` FROM `attr` WHERE `monada` = " . $root->kodikos;
 	$res = Globals::query($query);
 
 	while ($row = $res->fetch_array(MYSQLI_NUM)) {
@@ -67,7 +67,7 @@ function search_pattern($root, $pattern, $level) {
 
 	$qcount++;
 
-	$query = "SELECT SQL_CACHE `tekno` FROM `organosi` WHERE `goneas` = " .
+	$query = "SELECT `tekno` FROM `organosi` WHERE `goneas` = " .
 		$root->kodikos . " ORDER BY `aa`";
 	$res = Globals::query($query);
 

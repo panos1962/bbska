@@ -180,7 +180,7 @@ class Action {
 		// μονάδας στον client.
 
 		print "a:[";
-		$query = "SELECT SQL_CACHE `key`, `val` FROM `attr` WHERE `monada` = " .
+		$query = "SELECT `key`, `val` FROM `attr` WHERE `monada` = " .
 			$kodikos . " ORDER BY `aa`";
 		$res = Globals::query($query);
 		while ($row = $res->fetch_array(MYSQLI_NUM)) {
@@ -197,7 +197,7 @@ class Action {
 		// τους κωδικούς των παιδιών σε array.
 
 		$tekno = array();
-		$query = "SELECT SQL_CACHE `tekno` FROM `organosi` WHERE `goneas` = " .
+		$query = "SELECT `tekno` FROM `organosi` WHERE `goneas` = " .
 			$kodikos . " ORDER BY `aa`";
 		$res = Globals::query($query);
 		while ($row = $res->fetch_array(MYSQLI_NUM)) {
@@ -793,7 +793,7 @@ class Action {
 		Globals::klise_fige();
 
 		Globals::database();
-		$query = "SELECT SQL_CACHE `tekno` FROM `organosi` WHERE `goneas` = " .
+		$query = "SELECT `tekno` FROM `organosi` WHERE `goneas` = " .
 			intval($_POST["monada"]) . " ORDER BY `aa`";
 		$res = Globals::query($query);
 
