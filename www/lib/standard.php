@@ -177,6 +177,7 @@ class Globals {
 			break;
 		case "www.bbska.info":
 		case "bbska.info":
+		case "bbska.opasopa.net":
 			self::$server = (self::is_cert() ? "https://" : "http://") . $http_host . "/";
 			break;
 		default:
