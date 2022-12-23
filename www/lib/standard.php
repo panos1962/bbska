@@ -225,6 +225,7 @@ class Globals {
 		case "http://bbska.info/":
 		case "http://www.opasopa.net/bbska/":
 		case "http://opasopa.net/bbska/":
+		case "http://bbska.opasopa.net/":
 		case "http://www.prefadoros.win/bbska/":
 		case "http://prefadoros.win/bbska/":
 			break;
