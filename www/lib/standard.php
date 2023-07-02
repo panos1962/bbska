@@ -255,7 +255,7 @@ class Globals {
 
 		self::$session_ok = TRUE;
 
-		$evdomada = 24 * 7 * 3600;
+		$evdomada = 7 * 24 * 3600;
 		ini_set("session.gc_maxlifetime", $evdomada);
 		ini_set("session.cookie_lifetime", $evdomada);
 		session_set_cookie_params($evdomada);
