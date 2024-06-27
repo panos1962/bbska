@@ -2085,7 +2085,7 @@ Monada.prototype.getDOM = function() {
 	return this.DOM;
 };
 
-Attribute.prototype.createDOM = function() {
+Attrib.prototype.createDOM = function() {
 	var key, val, keyDOM, valDOM;
 
 	key = this.keyGet();
@@ -2353,7 +2353,7 @@ Bbska.attrRefreshDOM = function(dom, tok) {
 	return Bbska;
 };
 
-Attribute.prototype.getDOM = function() {
+Attrib.prototype.getDOM = function() {
 	if (!this.hasOwnProperty('DOM'))
 	this.createDOM();
 
@@ -3172,7 +3172,7 @@ Monada.prototype.edit = function() {
 				if ((!key) && (!val))
 				return true;
 
-				monada.attrPush(new Attribute({
+				monada.attrPush(new Attrib({
 					key: key,
 					val: val,
 				}));
@@ -3242,7 +3242,7 @@ Monada.prototype.edit = function() {
 
 			monada.alist = [];
 			for (i = 0; i < x.alist.length; i++) {
-				monada.attrPush(new Attribute({
+				monada.attrPush(new Attrib({
 					key: x.alist[i].key,
 					val: x.alist[i].val,
 				}));

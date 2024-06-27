@@ -144,7 +144,7 @@ Monada.prototype.attrFix = function() {
 	var monada = this;
 
 	this.attrWalk(function(i) {
-		monada.alist[i] = new Attribute(monada.alist[i]);
+		monada.alist[i] = new Attrib(monada.alist[i]);
 		return true;
 	});
 
@@ -295,27 +295,27 @@ Monada.prototype.sortSet = function() {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////@
 
-Attribute = function(props) {
+Attrib = function(props) {
 	Globals.initObject(this, props);
 };
 
-Attribute.prototype.keyGet = function() {
+Attrib.prototype.keyGet = function() {
 	return this.key;
 };
 
-Attribute.prototype.valGet = function() {
+Attrib.prototype.valGet = function() {
 	return this.val;
 };
 
-Attribute.prototype.isSort = function() {
+Attrib.prototype.isSort = function() {
 	return(this.keyGet().isSort());
 };
 
-Attribute.prototype.oxiSort = function() {
+Attrib.prototype.oxiSort = function() {
 	return !this.isSort();
 };
 
-Attribute.prototype.tiposSort = function() {
+Attrib.prototype.tiposSort = function() {
 	return(this.keyGet().tiposSort());
 };
 

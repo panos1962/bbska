@@ -463,7 +463,8 @@ class Globals {
 	// περικλείουν, εκτός και αν περάσουμε δεύτερη (false) παράμετρο.
 
 	public static function asfales_sql($s, $string = TRUE) {
-		if (get_magic_quotes_gpc())
+		if (function_exists('get_magic_quotes_gpc') &&
+		get_magic_quotes_gpc())
 		$s = stripslashes($s);
 
 		if (isset(self::$db))
@@ -652,7 +653,7 @@ class Monada {
 		return $this;
 
 		while ($row = $res->fetch_array(MYSQLI_ASSOC))
-		$this->alist[] = new Attribute($row["key"], $row["val"]);
+		$this->alist[] = new Attrib($row["key"], $row["val"]);
 
 		$res->free();
 
@@ -829,7 +830,7 @@ class Monada {
 	}
 }
 
-class Attribute {
+class Attrib {
 	public function __construct($key, $val) {
 		$this->key = $key;
 		$this->val = $val;

@@ -29,8 +29,12 @@ do
 	c)
 		client="${OPTARG}"
 		;;
-	?)
-		echo "${progname}: ${OPTARG}: invalid option" >&2
+	\?)
+		echo "${progname}: -${OPTARG}: invalid option" >&2
+		errs="yes"
+		;;
+	\:)
+		echo "${progname}: -${OPTARG}: missing option argument" >&2
 		errs="yes"
 		;;
 	esac
