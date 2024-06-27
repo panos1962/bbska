@@ -11,7 +11,7 @@ pull:
 	git pull
 
 commit:
-	git commit -m "modifications" .
+	git commit -m "modifications" . ; true
 
 push:
 	git push
