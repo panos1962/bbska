@@ -381,6 +381,7 @@ Bbska.querySetup = function() {
 	append($('<td>').css('position', 'relative').
 	append(Bbska.searchDOM = $('<input>').
 	prop('disabled', true).
+	attr('name', 'srchpat').
 	attr('placeholder', 'Loading…').
 	addClass('inputRight').
 	data('escape', function() {
