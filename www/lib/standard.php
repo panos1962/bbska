@@ -170,15 +170,15 @@ class Globals {
 		switch ($http_host) {
 		case "127.0.0.1":
 		case "localhost":
-		case "www.opasopa.net":
-		case "opasopa.net":
+		case "www.opasopa.gr":
+		case "opasopa.gr":
 		case "www.prefadoros.win":
 		case "prefadoros.win":
 			self::$server = "http://" . $http_host . "/bbska/";
 			break;
 		case "www.bbska.info":
 		case "bbska.info":
-		case "bbska.opasopa.net":
+		case "bbska.opasopa.gr":
 			self::$server = (self::is_cert() ? "https://" : "http://") . $http_host . "/";
 			break;
 		default:
@@ -224,9 +224,9 @@ class Globals {
 		case "http://localhost/bbska/";
 		case "http://www.bbska.info/":
 		case "http://bbska.info/":
-		case "http://www.opasopa.net/bbska/":
-		case "http://opasopa.net/bbska/":
-		case "http://bbska.opasopa.net/":
+		case "http://www.opasopa.gr/bbska/":
+		case "http://opasopa.gr/bbska/":
+		case "http://bbska.opasopa.gr/":
 		case "http://www.prefadoros.win/bbska/":
 		case "http://prefadoros.win/bbska/":
 			break;
@@ -485,10 +485,10 @@ class Globals {
 
 	public static function json_encode($x) {
 		switch (self::$server) {
-		case "http://www.opasopa.net/bbska/":
-		case "https://www.opasopa.net/bbska/":
-		case "http://opasopa.net/bbska/":
-		case "https://opasopa.net/bbska/":
+		case "http://www.opasopa.gr/bbska/":
+		case "https://www.opasopa.gr/bbska/":
+		case "http://opasopa.gr/bbska/":
+		case "https://opasopa.gr/bbska/":
 			return json_encode($x);
 		default:
 			return json_encode($x, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
