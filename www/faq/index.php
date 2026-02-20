@@ -183,6 +183,16 @@ save προκειμένου να αποθηκευτούν οι αλλαγές.
 </p>
 </div>
 
+<div class="erotisi">
+<h3>Μπορώ να έχω aliases;</h3>
+
+<p>
+Μπορείτε να προσθέσετε όσα aliases επιθμείτε με χρήση του attribute
+<span class="typo">_alias_</span class="typo">. Τα εν λόγω attributes και οι
+τιμές τους δεν εμφανίζονται στη σελίδα.
+</p>
+</div>
+
 <?php
 Selida::ofelimo_close();
 Selida::telos();

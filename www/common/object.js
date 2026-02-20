@@ -433,6 +433,7 @@ String.prototype.isSpecial = function() {
 	case '_block_':
 	case '_chain_':
 	case '_chinfo_':
+	case '_alias_':
 		return true;
 	}
 
