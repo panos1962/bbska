@@ -315,6 +315,10 @@ Attrib.prototype.oxiSort = function() {
 	return !this.isSort();
 };
 
+Attrib.prototype.isAlias = function() {
+	return(this.keyGet().isAlias());
+};
+
 Attrib.prototype.tiposSort = function() {
 	return(this.keyGet().tiposSort());
 };
@@ -414,6 +418,10 @@ Token.prototype.oxiTitle = function() {
 	return !this.isTitle();
 };
 
+Token.prototype.isAlias = function() {
+	return this.text.isAlias();
+};
+
 Token.prototype.isSpecial = function() {
 	return this.text.isSpecial();
 };
@@ -433,7 +441,6 @@ String.prototype.isSpecial = function() {
 	case '_block_':
 	case '_chain_':
 	case '_chinfo_':
-	case '_alias_':
 		return true;
 	}
 
@@ -446,6 +453,10 @@ String.prototype.oxiSpecial = function() {
 
 String.prototype.isTitle = function() {
 	return(this.valueOf() === '_title_');
+};
+
+String.prototype.isAlias = function() {
+	return(this.valueOf() === '_alias_');
 };
 
 String.prototype.isIcon = function() {

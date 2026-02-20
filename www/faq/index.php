@@ -188,8 +188,7 @@ save προκειμένου να αποθηκευτούν οι αλλαγές.
 
 <p>
 Μπορείτε να προσθέσετε όσα aliases επιθμείτε με χρήση του attribute
-<span class="typo">_alias_</span class="typo">. Τα εν λόγω attributes και οι
-τιμές τους δεν εμφανίζονται στη σελίδα.
+<span class="typo">_alias_</span class="typo">.
 </p>
 </div>
 

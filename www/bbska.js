@@ -2098,6 +2098,24 @@ Attrib.prototype.createDOM = function() {
 	if ((!key) && (!val))
 	return this;
 
+	// Αν πρόκειται για alias attribute, ελέγχουμε αν ταιριάζει με το
+	// τρέχον search pattern και αν δεν ταιριάζει παραλείπουμε την
+	// ανά χείρας εγγραφή.
+
+	if (key.isAlias()) {
+		if (!Bbska.searchPatternRE)
+		return this;
+
+		if (!val.match(Bbska.searchPatternRE))
+		return this;
+
+		this.DOM = $('<tr>').
+		data('attr', this).
+		append(valDOM = $('<td>').addClass('attr attrTarget').prop('colspan', 2));
+		Bbska.attrRefreshDOM(valDOM, new Token(val));
+		return this;
+	}
+
 	this.DOM = $('<tr>').
 	data('attr', this);
 
