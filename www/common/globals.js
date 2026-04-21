@@ -109,7 +109,7 @@ String.prototype.validEmail = function() {
 };
 
 String.prototype.validImage = function() {
-	return this.match(/^https?:\/\/.*\.(png|jpg|gif|jpeg|ico)$/i);
+	return this.match(/^https?:\/\/.*\.(png|jpg|gif|jpeg|ico|svg)$/i);
 };
 
 String.prototype.invalidImage = function() {
