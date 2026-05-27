@@ -299,7 +299,7 @@ background-color: rgba(226, 220, 28, 0.20);
 }
 
 .attrBold {
-	font-weight: bold;
+	font-weight: 600;
 }
 
 .attrIpogramisi {
@@ -378,7 +378,7 @@ background-color: rgba(226, 220, 28, 0.20);
 }
 
 .attrSort {
-	font-family: monospace;
+	font-family: "Roboto Mono", monospace;
 	font-weight: bold;
 	font-size: 70%;
 	color: #880000;
@@ -726,7 +726,7 @@ opacity: 1.0;
 }
 
 .attrEntonoMono {
-	font-family: monospace;
+	font-family: "Roboto Mono", monospace;
 	padding: 0;
 	white-space: pre;
 	word-spacing: 0;
