@@ -727,6 +727,7 @@ opacity: 1.0;
 
 .attrEntonoMono {
 	font-family: "Roboto Mono", monospace;
+	font-weight: 500;
 	padding: 0;
 	white-space: pre;
 	word-spacing: 0;
