@@ -92,7 +92,7 @@ background-color: rgba(226, 220, 28, 0.20);
 	display: inline-block;
 	font-family: sans-serif;
 	font-size: 90%;
-	font-weight: bold;
+	font-weight: 600;
 	color: rgb(80, 69, 9);
 }
 
@@ -107,7 +107,7 @@ background-color: rgba(226, 220, 28, 0.20);
 .monadaKodikos {
 	display: inline-block;
 	font-family: sans-serif;
-	font-weight: bold;
+	font-weight: 600;
 	font-size: 90%;
 	color: #C57600;
 	text-shadow: 1px 1px 1px #263436;
