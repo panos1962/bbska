@@ -272,6 +272,7 @@ background-color: rgba(226, 220, 28, 0.20);
 }
 
 .attrTarget {
+	padding: 1px 2px;
 	background-color: rgba(255, 255, 0, 0.50);
 	color: #1A1A71;
 
@@ -677,7 +678,7 @@ opacity: 1.0;
 
 .attrEntono {
 	display: inline-block;
-	padding: 0 4px;
+	padding: 2px 4px;
 
 	letter-spacing: 0.05em;
 	word-spacing: 0.3em;
