@@ -230,7 +230,7 @@ class Globals {
 		case "http://bbska.opasopa.gr/":
 		case "http://www.prefadoros.win/bbska/":
 		case "http://prefadoros.win/bbska/":
-		case "http://142.132.231.222/bbska":
+		case "http://142.132.231.222/bbska/":
 			break;
 		default:
 			if (self::$server)
