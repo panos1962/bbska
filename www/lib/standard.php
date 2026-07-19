@@ -174,6 +174,7 @@ class Globals {
 		case "opasopa.gr":
 		case "www.prefadoros.win":
 		case "prefadoros.win":
+		case "142.132.231.222":
 			self::$server = "http://" . $http_host . "/bbska/";
 			break;
 		case "www.bbska.info":
