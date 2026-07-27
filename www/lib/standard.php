@@ -168,23 +168,14 @@ class Globals {
 		self::$skiser = "http://" . $http_host;
 
 		switch ($http_host) {
-		case "127.0.0.1":
-		case "localhost":
-		case "www.opasopa.gr":
-		case "opasopa.gr":
-		case "www.prefadoros.win":
-		case "prefadoros.win":
-		case "142.132.231.222":
-			self::$server = "http://" . $http_host . "/bbska/";
-			break;
 		case "www.bbska.info":
 		case "bbska.info":
 		case "bbska.opasopa.gr":
 			self::$server = (self::is_cert() ? "https://" : "http://") . $http_host . "/";
 			break;
 		default:
-			if ($http_host) print $http_host . ": ";
-			self::klise_fige("unknown server");	
+			self::$server = "http://" . $http_host . "/bbska/";
+			break;
 		}
 
 		self::get_client_ip();
@@ -220,26 +211,8 @@ class Globals {
 		$dbname = "bbska";
 		$dbuser = "bbska";
 
-		switch (self::$server) {
-		case "http://127.0.0.1/bbska/";
-		case "http://localhost/bbska/";
-		case "http://www.bbska.info/":
-		case "http://bbska.info/":
-		case "http://www.opasopa.gr/bbska/":
-		case "http://opasopa.gr/bbska/":
-		case "http://bbska.opasopa.gr/":
-		case "http://www.prefadoros.win/bbska/":
-		case "http://prefadoros.win/bbska/":
-		case "http://142.132.231.222/bbska/":
-			break;
-		default:
-			if (self::$server)
-			print self::$server . ": ";
-
-			self::klise_fige("unknown server (database)");	
-		}
-
-		$bekadb = preg_replace("/[^a-zA-Z0-9]/", "", @file_get_contents(self::$dir . "site/bekadb"));
+		$bekadb = preg_replace("/[^a-zA-Z0-9]/", "",
+			@file_get_contents(self::$dir . "site/bekadb"));
 		self::$db = @new mysqli($dbhost, $dbuser, $bekadb, $dbname);
 
 		self::$db->connect_errno &&
