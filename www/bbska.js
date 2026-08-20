@@ -29,7 +29,7 @@ Bbska = {
 	// ΠΡΟΣΟΧΗ: το URL αναφέρεται στην official σελίδα της μπάμπουσκας
 	// και όχι σε τυχόν αντίγραφο.
 
-	docRef: 'http://bbska.info?root=4834&explode&chain=',
+	docRef: 'http://opasopa.gr/bbska?root=4834&explode&chain=',
 
 	// property: info
 	//
