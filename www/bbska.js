@@ -772,6 +772,7 @@ Bbska.resultSetup = function() {
 	$.post('bbska.php', {
 		action: 'setup',
 		root: Bbska.root,
+		dataType: 'json',
 	}, function(data) {
 		if (!data)
 		return Bbska.searchDOM.attr('placeholder', 'Ooops!');
