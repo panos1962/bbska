@@ -824,11 +824,9 @@ Bbska.imageFromServer = function() {
 	$.post('bbska.php', {
 		action: 'imageget',
 		root: Bbska.root.kodikos,
-		dataType: 'json',
 	}, function(data) {
 		try {
-			//Bbska.image = ('{' + data + '}').evalAsfales();
-			Bbska.image = data;
+			Bbska.image = ('{' + data + '}').evalAsfales();
 
 			if (!Bbska.image.hasOwnProperty('id'))
 			throw 'Missing id!';

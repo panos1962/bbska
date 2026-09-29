@@ -106,7 +106,6 @@ class Action {
 		// Για λόγους επιπλέον ασφάλειας δημιουργούμε κάποια «ταυτότητα»
 		// για το συγκεκριμένο image με το όνομα "id".
 
-		print "{";
 		print "id:" . ($id = rand()) . ",\n";
 
 		self::imageget_monada($root);
@@ -117,7 +116,6 @@ class Action {
 		// του image.
 
 		print "di:" . $id . ",\n";
-		print "}";
 
 		// Πριν αποστείλουμε τα δεδομένα στον client, δημιουργούμε το image
 		// cache file για την συγκεκριμένη μονάδα.
